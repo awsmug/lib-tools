@@ -139,7 +139,7 @@ class CallerDetective {
     /**
      * Caller function name.
      * 
-     * @return string function name.
+     * @return string Function name.
      * 
      * @since 1.0.0
      */
@@ -149,5 +149,27 @@ class CallerDetective {
         }
 
         return $this->trace[ $this->depth ]['args'];
+    }
+
+    /**
+     * File name of called function.
+     * 
+     * @return string File name.
+     * 
+     * @since 1.0.0
+     */
+    public function file() {
+        return $this->trace[ $this->depth ]['file'];
+    }
+
+    /**
+     * Line of called function.
+     * 
+     * @return string File name.
+     * 
+     * @since 1.0.0
+     */
+    public function line() {
+        return $this->trace[ $this->depth ]['line'];
     }
 }
