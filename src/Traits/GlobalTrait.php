@@ -3,11 +3,11 @@
 namespace AWSM\LibTools\Traits;
 
 /**
- * Singleton trait
+ * Global trait
  * 
  * @since 1.0.0
  */
-trait SingletonTrait
+trait GlobalTrait
 {
     /**
      * Instance
@@ -16,21 +16,21 @@ trait SingletonTrait
      * 
      * @since 1.0.0
      */
-    private static $instance;
+    private static $global;
 
     /**
-     * Instance
+     * Global
      * 
      * @return Assets
      * 
      * @since 1.0.0
      */
-    public static function instance() : self 
+    public static function global() : self 
     {
-        if ( static::$instance === null ) {
-            static::$instance = new self();
+        if ( static::$global === null ) {
+            static::$global = new self();
         }
     
-        return static::$instance;
+        return static::$global;
     }
 } 
