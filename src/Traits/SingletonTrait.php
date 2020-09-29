@@ -7,7 +7,7 @@ namespace AWSM\LibTools\Traits;
  * 
  * @since 1.0.0
  */
-trait Singleton 
+trait SingletonTrait
 {
     /**
      * Instance
