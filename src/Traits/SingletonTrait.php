@@ -16,7 +16,7 @@ trait Singleton
      * 
      * @since 1.0.0
      */
-    protected static $instance;
+    private static $instance;
 
     /**
      * Instance
