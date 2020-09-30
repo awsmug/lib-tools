@@ -27,10 +27,10 @@ trait SingletonTrait
      */
     public static function instance() : self 
     {
-        if ( static::$instance === null ) {
-            static::$instance = new self();
+        if ( self::$instance === null ) {
+            self::$instance = new self();
         }
     
-        return static::$instance;
+        return self::$instance;
     }
 } 
