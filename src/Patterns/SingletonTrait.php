@@ -21,7 +21,7 @@ trait SingletonTrait
     /**
      * Instance
      * 
-     * @return Assets
+     * @return self
      * 
      * @since 1.0.0
      */
