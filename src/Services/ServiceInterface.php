@@ -1,6 +1,6 @@
 <?php
 
-namespace AWSM\LibTools\Interfaces;
+namespace AWSM\LibTools\Services;
 
 /**
  * Service interface

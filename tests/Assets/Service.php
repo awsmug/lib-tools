@@ -1,7 +1,7 @@
 <?php
 
-use AWSM\LibTools\Interfaces\ServiceInterface;
-use AWSM\LibTools\Traits\IdentableTrait;
+use AWSM\LibTools\Identables\IdentableTrait;
+use AWSM\LibTools\Services\ServiceInterface;
 
 class Service implements ServiceInterface {
     use IdentableTrait;

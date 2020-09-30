@@ -1,7 +1,7 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use AWSM\LibTools\CallerDetective;
+use AWSM\LibTools\Callbacks\CallerDetective;
 
 final class CallerDetectiveTest extends TestCase {
 	public function testFunction(): void {

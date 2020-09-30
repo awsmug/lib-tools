@@ -1,13 +1,13 @@
 <?php
 
-namespace AWSM\LibTools\Traits;
+namespace AWSM\LibTools\Identables;
 
 /**
- * Idendatble integer trait
+ * Idendatble trait
  * 
  * @since 1.0.0
  */
-trait IdentableIntegerTrait {
+trait IdentableTrait {
     private $id;
 
     /**
@@ -17,7 +17,7 @@ trait IdentableIntegerTrait {
      * 
      * @since 1.0.0
      */
-    public function setId( int $id ) {
+    public function setId( string $id ) {
         $this->id = $id;
     }
 
@@ -28,7 +28,7 @@ trait IdentableIntegerTrait {
      * 
      * @since 1.0.0
      */
-    public function getId() : int 
+    public function getId() : string 
     {
         return $this->id;
     }

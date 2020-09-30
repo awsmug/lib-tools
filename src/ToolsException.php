@@ -1,6 +1,6 @@
 <?php
 
-namespace AWSM\LibTools\Exceptions;
+namespace AWSM\LibTools;
 
 /**
  * Exception Wrapper for tools

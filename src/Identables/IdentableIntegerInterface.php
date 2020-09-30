@@ -1,13 +1,13 @@
 <?php
 
-namespace AWSM\LibTools\Interfaces;
+namespace AWSM\LibTools\Identables;
 
 /**
- * Identable interface
+ * Identable integer interface
  * 
  * @since 1.0.0
  */
-interface IdentableInterface {
+interface IdentableIntegerInterface {
     /**
      * Set id
      * 
@@ -15,7 +15,7 @@ interface IdentableInterface {
      * 
      * @since 1.0.0
      */
-    public function setId( $id );
+    public function setId( int $id );
 
     /**
      * Get id
@@ -24,5 +24,5 @@ interface IdentableInterface {
      * 
      * @since 1.0.0
      */
-    public function getId();
+    public function getId() : int ;
 }

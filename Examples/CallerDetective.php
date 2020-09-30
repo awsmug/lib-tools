@@ -1,6 +1,6 @@
 <?php
 
-use AWSM\LibTools\CallerDetective;
+use AWSM\LibTools\Callbacks\CallerDetective;
 
 require '../vendor/autoload.php';
 

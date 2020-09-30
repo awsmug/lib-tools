@@ -1,9 +1,8 @@
 <?php
 
+use AWSM\LibTools\Services\ServiceException;
+use AWSM\LibTools\Services\ServiceInterface;
 use PHPUnit\Framework\TestCase;
-
-use AWSM\LibTools\Exceptions\ToolsException;
-use AWSM\LibTools\Interfaces\ServiceInterface;
 
 require 'Assets/ServiceContainer.php';
 require 'Assets/Service.php';
@@ -22,7 +21,7 @@ final class ServiceContainerTest extends TestCase
 
         $sc->removeService( 'fantastic_service' );
 
-        $this->expectException( ToolsException::class );
+        $this->expectException( ServiceException::class );
         $sc->getService( 'fantastic_service' );
     }
 

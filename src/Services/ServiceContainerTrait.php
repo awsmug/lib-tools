@@ -1,9 +1,8 @@
 <?php
 
-namespace AWSM\LibTools\Traits;
+namespace AWSM\LibTools\Services;
 
 use AWSM\LibTools\Exceptions\ToolsException;
-use AWSM\LibTools\Interfaces\ServiceInterface;
 
 /**
  * Service container trait.
@@ -34,7 +33,7 @@ trait ServiceContainerTrait {
     public function addService( string $serviceId, ServiceInterface $service, int $priotity = 1 ) 
     {
         if ( array_key_exists( $serviceId, $this->services ) ) {
-            throw new ToolsException( 'Service id already exists' );
+            throw new ServiceException( 'Service id already exists' );
         }
 
         $this->services[ $serviceId ] = [
@@ -68,7 +67,7 @@ trait ServiceContainerTrait {
     public function getService( string $serviceId ) : ServiceInterface
     {
         if ( ! $this->hasService( $serviceId ) ) {
-            throw new ToolsException( 'Service id does not exist' );
+            throw new ServiceException( 'Service id does not exist' );
         }
         
         return $this->services[ $serviceId ]['service'];
@@ -86,7 +85,7 @@ trait ServiceContainerTrait {
     public function removeService( string $serviceId ) 
     {
         if ( ! $this->hasService( $serviceId ) ) {
-            throw new ToolsException( 'Service id does not exist' );
+            throw new ServiceException( 'Service id does not exist' );
         }
         
         unset( $this->services[ $serviceId ] );

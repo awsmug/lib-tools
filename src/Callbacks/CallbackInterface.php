@@ -1,6 +1,6 @@
 <?php
 
-namespace AWSM\LibTools;
+namespace AWSM\LibTools\Callbacks;
 
 /**
  * Class CallbackInterface.

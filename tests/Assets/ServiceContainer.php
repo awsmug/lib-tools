@@ -1,7 +1,7 @@
 <?php
 
-use AWSM\LibTools\Interfaces\ServiceContainerInterface;
-use AWSM\LibTools\Traits\ServiceContainerTrait;
+use AWSM\LibTools\Services\ServiceContainerInterface;
+use AWSM\LibTools\Services\ServiceContainerTrait;
 
 class ServiceContainer implements ServiceContainerInterface {
     use ServiceContainerTrait;

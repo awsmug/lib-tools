@@ -1,6 +1,6 @@
 <?php
 
-namespace AWSM\LibTools\Traits;
+namespace AWSM\LibTools\Patterns;
 
 /**
  * Singleton trait
